@@ -16,7 +16,7 @@
         public static class QueryTemplates
         {
             public const string GetOrderInfo =
-                "SELECT TOP 1 OrderID, CustomerID, TotalMoney, Ordered FROM dbo.Orders where OrderCode='{0}'";
+                "SELECT TOP 1 OrderID, CustomerID, TotalMoney, Ordered FROM dbo.Orders where OrderCode='{0}'"; // get first element from table, and TOP 1 maybe will change on LIMIT 1 that depend on SQL provider
         }
     }
 }
